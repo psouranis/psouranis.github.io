@@ -344,7 +344,7 @@ h4 {
 .skills .box-header .head-text {
   text-align: left;
   margin-bottom: 0.5rem;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-size: 1rem;
 }
 
