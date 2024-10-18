@@ -2,24 +2,27 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Senior Data Scientist @ <b> Deutsche Telekom </b>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  more_info: 
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+news: false # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+## Welcome to My Blog!
+Hi there! I’m Panagiotis Souranis, a passionate Data Scientist and Machine Learning Engineer with over four years of experience in crafting data-driven solutions that make a real impact. I hold a Bachelor's degree in Mathematics and two Master's degrees in Statistics and Artificial Intelligence, both with high distinction. My academic journey has given me a strong foundation in advanced analytics, modeling, and visualization, allowing me to turn complex datasets into actionable insights.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+## What I Do
+Currently, I work as a Senior Data Scientist at Deutsche-Telekom in Thessaloniki. Here, I’ve had the exciting opportunity to design features for our data analytics platform, including a natural language processing interface that lets users explore data using everyday language. I also created an LLM documentation chatbot to help our users get instant answers to their questions. Before this, I was a Senior Data Science Analyst at Accenture, where I worked with big data technologies to enhance network reliability in the telecommunications industry. It was a fantastic experience that deepened my understanding of how data can drive business success.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+## My Passion
+I thrive on teamwork and love continuous learning. I’m always exploring the latest advancements in data science and machine learning, eager to apply innovative ideas to solve real-world problems. Recently, I even took home 1st place in the Prediction Agent Hackathon for developing AI tools in prediction markets!
+
+## Let’s Connect!
+I’m excited to share my journey with you through this blog. Feel free to check out my projects on my personal website or connect with me on social media. Let’s explore the fascinating world of data together!
