@@ -4,7 +4,6 @@
 
 // Typography
 
-p,
 h1,
 h2,
 h3,
@@ -14,9 +13,23 @@ h6,
 em,
 div,
 li,
-span,
-strong {
+span {
   color: var(--global-text-color);
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+em {
+  color: rgb(248, 75, 45);
+}
+
+strong {
+  font-weight: 700;
+  color: rgb(86, 93, 219); 
 }
 
 hr {

@@ -20,5 +20,6 @@
     "downscalePercent": 100
   },
   "newLinkFormat": "relative",
-  "userIgnoreFilters": []
+  "userIgnoreFilters": [],
+  "propertiesInDocument": "source"
 }
