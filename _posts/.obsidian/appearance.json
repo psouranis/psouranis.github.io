@@ -1,0 +1,17 @@
+{
+  "accentColor": "#2851cc",
+  "cssTheme": "Things",
+  "textFontFamily": "DejaVu Sans,Lora,Open Sans,DejaVu Serif,JetBrains Mono,Latin Modern Sans Quotation,JetBrainsMono Nerd Font,Arial",
+  "baseFontSize": 20,
+  "nativeMenus": false,
+  "theme": "obsidian",
+  "monospaceFontFamily": "JetBrains Mono",
+  "interfaceFontFamily": "",
+  "enabledCssSnippets": [
+    "custom_snippet",
+    "white_font_snippet",
+    "exclude_pdf",
+    "disable_view_pdf"
+  ],
+  "baseFontSizeAction": false
+}

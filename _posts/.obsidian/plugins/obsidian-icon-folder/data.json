@@ -1,0 +1,80 @@
+{
+  "settings": {
+    "migrated": 5,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "📚",
+      "TiCertificate",
+      "LiComponent",
+      "RiArticleFill",
+      "RiGuideLine"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": true,
+    "iconInTitleEnabled": false,
+    "iconInFrontmatterEnabled": false,
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconIdentifier": ":",
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsInLinksEnabled": true,
+    "debugMode": false
+  },
+  "Wiki": {
+    "iconName": "FabWikipediaW",
+    "iconColor": "#4b51fb"
+  },
+  "Blogposts": {
+    "iconName": "FabMicroblog",
+    "iconColor": "#cc2828"
+  },
+  "Seminars": {
+    "iconName": "BoBxsCameraMovie",
+    "iconColor": "#152f51"
+  },
+  "Wiki/Data-Engineering": "RiDatabase2Fill",
+  "Wiki/DevOps": "TiPlayerTrackNextFilled",
+  "Wiki/Machine-Learning": "RiRobot2Fill",
+  "Wiki/Software-Engineering": "RaGearHammer",
+  "Wiki/Interesting": "TiBrandGithubFilled",
+  "Wiki/Primers": "BoBxsPlusCircle",
+  "Interviews": {
+    "iconName": "RiQuestionFill",
+    "iconColor": "#f381ef"
+  },
+  "Blogposts/links.md": "CoLink",
+  "Wiki/Statistics": "IbTriangleUp",
+  "Reading Lists": {
+    "iconName": "LiPaperclip",
+    "iconColor": "#057dc7"
+  },
+  "Guides-Docs-Manuals": {
+    "iconName": "RiGuideLine",
+    "iconColor": "#592626"
+  },
+  "Papers+": {
+    "iconName": "RiArticleFill",
+    "iconColor": "#ffca57"
+  },
+  "Notebooks": {
+    "iconName": "BoBxlPython",
+    "iconColor": "#12ab45"
+  },
+  "Certifications": {
+    "iconName": "TiCertificate",
+    "iconColor": "#ab1ed2"
+  },
+  "Courses": "📚"
+}

@@ -1,0 +1,187 @@
+{
+  "main": {
+    "id": "9d77bc1ee2892ee6",
+    "type": "split",
+    "children": [
+      {
+        "id": "fffb74372f2723f3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23a9d0e4349fdca6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/data-science/mlops/ml-engineering-specialization/Course 1 -  Introduction to Machine Learning in Production.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2e599b90286e572d",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "35034a62a7927fbc",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "cf14d60bf0442599",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "33fed9cd53287f8d",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "182fee07bb3748d6",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "e921d558f72592bd",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "73bb8931c31db301",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "wiki/data-science/mlops/ml-engineering-specialization/Course 1 -  Introduction to Machine Learning in Production.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "8cd730a2bd664d84",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "wiki/data-science/mlops/ml-engineering-specialization/Course 1 -  Introduction to Machine Learning in Production.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "b634c8cddb368975",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "wiki/data-science/mlops/ml-engineering-specialization/Course 1 -  Introduction to Machine Learning in Production.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "remotely-save:Remotely Save": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "35034a62a7927fbc",
+  "lastOpenFiles": [
+    "books/Mahmoud Parsian - Data Algorithms with Spark_ Recipes and Design Patterns for Scaling Up using PySpark-O'Reilly Media (2022).pdf",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 3 - Machine Learning Modeling Pipelines in Production/w1/Screenshot from 2024-01-04 20-38-37.png",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 3 - Machine Learning Modeling Pipelines in Production/w1/Screenshot from 2024-01-04 20-40-32.png",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 3 - Machine Learning Modeling Pipelines in Production/w1/Screenshot from 2024-01-04 20-39-55.png",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 3 - Machine Learning Modeling Pipelines in Production/w1/Screenshot from 2024-01-04 20-40-26.png",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 3 - Machine Learning Modeling Pipelines in Production/w1/Screenshot from 2024-01-04 20-40-16.png",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 3 - Machine Learning Modeling Pipelines in Production/w1/Screenshot from 2024-01-04 20-40-08.png",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 3 - Machine Learning Modeling Pipelines in Production/w1/Screenshot from 2024-01-04 20-39-47.png",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 3 - Machine Learning Modeling Pipelines in Production/w1/Screenshot from 2024-01-04 20-40-01.png",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 3 - Machine Learning Modeling Pipelines in Production/w1/Screenshot from 2024-01-04 20-37-04.png",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 3 - Machine Learning Modeling Pipelines in Production/w1/Screenshot from 2024-01-04 20-39-32.png",
+    "books",
+    "wiki/software-engineering/languages/python/Fluent Python.md",
+    "wiki/data-science/mlops/ml-engineering-zoomcamp/Monitoring.md",
+    "wiki/data-science/mlops/ml-engineering-zoomcamp/Deployment.md",
+    "wiki/data-science/mlops/ml-engineering-zoomcamp/Introduction.md",
+    "wiki/data-science/mlops/ml-engineering-zoomcamp/Best Practices.md",
+    "wiki/software-engineering/languages/python/High Performance Python.md",
+    "wiki/data-science/mlops/ml-engineering-zoomcamp/Workflow Orchestration.md",
+    "wiki/data-science/mlops/ml-engineering-zoomcamp/Intro to Experiment Tracking.md",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 2 - Machine Learning Data Lifecycle in Production.md",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 1 -  Introduction to Machine Learning in Production.md",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 3 - Machine Learning Modeling Pipelines in Production.md",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 2 - Machine Learning Data Lifecycle in Production/w2",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 2 - Machine Learning Data Lifecycle in Production/w1",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 2 - Machine Learning Data Lifecycle in Production/w3",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 2 - Machine Learning Data Lifecycle in Production/w4",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 3 - Machine Learning Modeling Pipelines in Production/w5",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 3 - Machine Learning Modeling Pipelines in Production/w2",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 3 - Machine Learning Modeling Pipelines in Production/w1",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 3 - Machine Learning Modeling Pipelines in Production/w3",
+    "wiki/data-science/mlops/ml-engineering-specialization/Course 3 - Machine Learning Modeling Pipelines in Production/w4",
+    "wiki/data-science/data-engineering/data-pipelines-w-Airflow.md",
+    "wiki/interview-questions/Interview Questions.md",
+    "wiki/software-engineering/devops/kubernetes/Kubernetes for Developers.md",
+    "wiki/data-science/machine-learning/pytorch-geometric/beginner.md",
+    "wiki/data-science/machine-learning/pytorch-geometric/advanced.md",
+    "wiki/data-science/data-engineering/data-engineering-datatalks/Data Warehouse.md",
+    "wiki/software-engineering/languages/python/Fluent Python 4e816de784e449e69603f734bd28345c.md",
+    "wiki/data-science/data-engineering/data-engineering-datatalks/Data Ingestion.md",
+    "wiki/data-science/machine-learning/deep-learning-tuning-playbook/deep-learning-tuning-playbook.md",
+    "wiki/data-science/data-engineering/data-engineering-datatalks/Introduction to Streaming.md",
+    "wiki/data-science/data-engineering/data-engineering-datatalks/Introduction to Batch Processing.md",
+    "wiki/data-science/data-engineering/data-engineering-datatalks/Introduction to Data Engineering.md",
+    "wiki/data-science/data-engineering/data-engineering-datatalks/Introduction to Analytics Engineering.md",
+    "wiki/data-science/machine-learning/tiny-ml-and-efficient-dl/TinyML and Efficient Deep Learning Computing.md"
+  ]
+}
