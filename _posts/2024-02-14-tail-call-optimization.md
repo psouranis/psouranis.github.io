@@ -3,8 +3,8 @@ layout: post
 title: Tail Call Optimization - What is it?
 date: 2025-02-14 12:40:16
 description: Tail Call Optimization
-tags: C Optimizations
-categories: performance
+tags: C Optimizations Performance
+categories: Optimizations
 thumbnail: assets/post_images/tco.png
 ---
 
