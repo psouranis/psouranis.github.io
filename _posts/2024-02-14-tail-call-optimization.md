@@ -17,8 +17,7 @@ A recursive method is referred to as tail-recursive *when the recursive call is 
 Here is a simple example of a *tail recursive method*:
 
 ```c
-void printNumbers(int n) 
-{
+void printNumbers(int n) {
 	if (n <= 0) {
 		return;
 	}	
@@ -30,8 +29,7 @@ void printNumbers(int n)
 Notice in this function how the last thing executed by the method is a recrusive call, making it a *tail recursive method*. Let’s take another example now, the factorial function. The factorial function can be implemented as follows:
 
 ```c
-int factorial(int n) 
-{
+int factorial(int n) {
 	if (n==1) {
 		return 1;
 	}
@@ -42,8 +40,7 @@ int factorial(int n)
 Is this a tail recursive method? On the first look someone would say yes but if we were to look more closely we would see that the function can be written as follows:
 
 ```c
-int factorial(int n) 
-{
+int factorial(int n) {
 	if (n==1) {
 		return 1;
 	}
