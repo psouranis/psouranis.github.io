@@ -15,6 +15,7 @@ div,
 li,
 span {
   color: var(--global-text-color);
+  font-family: 'Lora';
 }
 
 pre, code {
@@ -74,6 +75,11 @@ table.table a {
     border: 1px solid var(--global-divider-color) !important;
   }
 }
+
+.rounded {
+  border-radius: 1.5rem !important;
+}
+
 
 blockquote {
   background: var(--global-bg-color);
