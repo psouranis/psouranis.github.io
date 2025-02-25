@@ -10,11 +10,15 @@ h3,
 h4,
 h5,
 h6,
-em,
 div,
-li {
+li,
+em {
   color: var(--global-text-color);
   font-family: 'Lora';
+}
+
+span {
+  color: var(--global-text-color);
 }
 
 pre, code {
