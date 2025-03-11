@@ -229,6 +229,13 @@ for `l1_unstructured` pruning method.
 In our experiments, we finetuned the pruned model in order to achieve some of the lost accuracy (around 71%). 
 So, we managed to reduce our model size by 50% and lose only 12.5% of its initial accuracy.
 
+#### Summary
+
+Experimental results using a Vision Transformer on ImageNet-1000 indicate that L1 Unstructured Pruning achieves the best balance between compression ratio and accuracy.  
+Ln Structured Pruning was found to be too aggressive, significantly reducing accuracy. 
+Finetuning a pruned model can recover some of the lost accuracy, as demonstrated with L1 Unstructured pruning, achieving a 50% model size reduction with a limited accuracy drop after finetuning.
+
+You can find the code available here: [Github](https://github.com/psouranis/pruning)
 
 
 
