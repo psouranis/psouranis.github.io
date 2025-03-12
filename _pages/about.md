@@ -26,6 +26,6 @@ latest_posts:
 
 Hi, I'm Panagiotis Souranis, a Data Scientist with over 5 years of experience. I have a Bachelor's in Mathematics and two Master's degrees in Statistics and Artificial Intelligence. 
 
-Currently, I work as a Senior Data Scientist at Deutsche-Telekom in Thessaloniki. Previously I was working for Altair Engineering, Accenture and Deus Ex Machina.
+Currently, I work as a Senior Data Scientist at Deutsche-Telekom in Thessaloniki. Previously I worked for Altair Engineering, Accenture and Deus Ex Machina.
 
 I enjoy teamwork and continuous learning, always looking to apply new ideas in data science to solve real-world problems.
