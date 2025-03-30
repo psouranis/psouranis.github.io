@@ -211,7 +211,7 @@ we prune the neurons of the $$L+1$$ layer.
 
 In the rest of the post, we will explore each of those techniques on the ImageNet validation dataset (50000) by using as a base model the Vision Transformer model that you can find [[here]](https://huggingface.co/google/vit-base-patch16-224)
 
-#### Results in ImageNet1000 with VIT
+#### Visual Transformers in ImageNet1000
 
 Now that we've explored the different pruning methods, it's time to see how they perform in practice. We evaluated these techniques on the challenging ImageNet dataset, using the popular Vision Transformer architecture as our foundation. In our experiments, we adopted a strategy of applying the same pruning ratio to each layer throughout the pruning process, with the exception of the `LayerNorm` layers.
 
