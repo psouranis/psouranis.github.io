@@ -211,7 +211,7 @@ we prune the neurons of the $$L+1$$ layer.
 
 In the rest of the post, we will explore each of those techniques on the ImageNet validation dataset (50000) by using as a base model the Vision Transformer model that you can find [[here]](https://huggingface.co/google/vit-base-patch16-224)
 
-#### Visual Transformers in ImageNet1000
+### Visual Transformers in ImageNet1000
 
 Now that we've explored the different pruning methods, it's time to see how they perform in practice. We evaluated these techniques on the challenging ImageNet dataset, using the popular Vision Transformer architecture as our foundation. In our experiments, we adopted a strategy of applying the same pruning ratio to each layer throughout the pruning process, with the exception of the `LayerNorm` layers.
 
@@ -270,7 +270,7 @@ Furthermore, within the Attention blocks of the remaining layers, we specificall
 
 This configuration yielded an accuracy of 44% with a model sparsity of 20% in the $$\ell_1$$ structured pruning. Our next step will be to investigate whether fine-tuning can help recover some of the accuracy lost during the pruning process.
 
-#### Finetuning with pruning 
+### Finetuning with pruning 
 
 In a final effort to reclaim some of the performance lost during pruning, we proceeded to fine-tune the resulting sparse network. 
 This step proved fruitful, allowing us to recover a significant portion of the original accuracy. 
@@ -287,7 +287,7 @@ This outcome suggests that while aggressive structured pruning can initially lea
 > This made the pruning permanent. However, when finetuning, we take a different approach. We deliberately don't immediately make the pruned elements permanent. The reason for this is that we want the weight masks to remain active, allowing the backward pass to specifically focus on updating the weights of the unpruned elements.
 
 
-#### Iterative approach
+### Iterative approach
 
 So, building on what we've learned, another way to really optimize our model is to try an iterative approach – kind of like a cycle of pruning and fine-tuning. 
 
@@ -319,7 +319,7 @@ Now that we've covered the basics, let's dive into the results! The figure below
 - When it comes to preserving accuracy, L1 unstructured pruning proved to be the most effective approach. In fact, we were able to restore the network to its original level of performance using this method.
 
 
-#### In Conclusion: Pruning for Efficiency
+### In Conclusion: Pruning for Efficiency
 
 Our exploration into post-training model optimization highlighted pruning as a valuable technique for creating more efficient machine learning models. 
 We observed that L1 unstructured pruning excelled at maintaining accuracy, while structured methods offer potential speedups with careful application. 
