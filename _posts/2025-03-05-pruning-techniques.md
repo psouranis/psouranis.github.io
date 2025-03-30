@@ -328,8 +328,3 @@ Fine-tuning proved essential for recovering performance after pruning, and itera
 Ultimately, pruning is a key tool in the ongoing effort to deploy powerful AI models efficiently across various platforms. 
 
 You can find the code available here: [Github](https://github.com/psouranis/pruning)
-
-
-
-
-
