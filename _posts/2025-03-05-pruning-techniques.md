@@ -308,16 +308,15 @@ This gradual process helps the network get used to having fewer connections and 
 
 Now that we've covered the basics, let's dive into the results! The figure below compares the performance of the various pruning methods and strategies we experimented with.
 
-- For the Random unstructured, Random structured, and L1 structured methods, we only achieved sensible results using a 22% pruning ratio, and only when restricting pruning to the layers mentioned previously.
-
-- When it comes to preserving accuracy, L1 unstructured pruning proved to be the most effective approach. In fact, we were able to restore the network to its original level of performance using this method.
-
-
 <br>
 
 <div style="text-align: center;">
   <img src="/assets/post_images/ln_structured_base_finetuned_iter.png" style="width: 100%;">
 </div>
+
+- For the Random unstructured, Random structured, and L1 structured methods, we only achieved sensible results using a 22% pruning ratio, and only when restricting pruning to the layers mentioned previously.
+
+- When it comes to preserving accuracy, L1 unstructured pruning proved to be the most effective approach. In fact, we were able to restore the network to its original level of performance using this method.
 
 
 #### In Conclusion: Pruning for Efficiency
@@ -326,11 +325,7 @@ Our exploration into post-training model optimization highlighted pruning as a v
 We observed that L1 unstructured pruning excelled at maintaining accuracy, while structured methods offer potential speedups with careful application. 
 Fine-tuning proved essential for recovering performance after pruning, and iterative approaches hold promise for further optimization.
 
-While L1 unstructured pruning showed strong results, the sensitivity of different model layers underscores the need for tailored pruning strategies. 
-The field continues to advance, with future research likely to focus on more intelligent automation of the pruning process.
-
 Ultimately, pruning is a key tool in the ongoing effort to deploy powerful AI models efficiently across various platforms. 
-This journey of optimization is crucial for building more sustainable and accessible AI systems.
 
 You can find the code available here: [Github](https://github.com/psouranis/pruning)
 
