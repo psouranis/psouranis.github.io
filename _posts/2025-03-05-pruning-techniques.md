@@ -5,7 +5,7 @@ date: 2025-03-04 12:40:16
 description: Pruning Techniques
 tags: Inference Optimizations Performance ML
 categories: Optimizations
-thumbnail: assets/post_images/pruned_tree.png
+thumbnail: assets/post_images/tree.webp
 giscus_comments: true
 toc: 
   beginning: true
@@ -15,9 +15,11 @@ In this article, we are going to focus in optimizing machine learning models aft
 
 ### Pruning
 
+<br>
 <div style="text-align: center;">
-  <img src="/assets/post_images/pruned_tree.png">
+  <img src="/assets/post_images/tree.webp" style="width: 50%; height: auto;">
 </div>
+<br>
 
 Pruning is the practice of removing parameters (which may entail removing individual parameters, or parameters in groups such as by neurons) from an existing artificial neural networks.[1] The goal of this process is to maintain accuracy of the network while increasing its efficiency. This can be done to reduce the computational resources required to run the neural network [[1]](https://en.wikipedia.org/wiki/Pruning_(artificial_neural_network)). 
 
@@ -304,7 +306,7 @@ By doing this over and over, we can often make the model even smaller and still 
 
 This gradual process helps the network get used to having fewer connections and learn to work efficiently with what it has. Since we already saw some good results with just one round of pruning and tuning, giving this iterative method a shot looks like a promising next step to really make our Vision Transformer shine when we want to put it to work! It's all about finding that sweet spot of size and performance.
 
-#### Results
+### Results
 
 Now that we've covered the basics, let's dive into the results! The figure below compares the performance of the various pruning methods and strategies we experimented with.
 
