@@ -12,7 +12,7 @@ profile:
 
 latest_posts:
   enabled: true
-  scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 5 # leave blank to include all the blog posts
 
 # selected_papers: false # includes a list of papers marked as "selected={true}"
