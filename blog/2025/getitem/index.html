@@ -88,17 +88,30 @@
     <span class="k">pass</span>
 <span class="nf">print</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="nf">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start</span><span class="p">)</span>
 <span class="c1"># 0.0038449764251708984
-</span></pre></td> </tr></tbody></table></code></pre></div></div> <p>Now as you can see in order to iterate through our whole dataset which consists of 91 examples, we needed with batch size of 8 samples around 3 miliseconds. That’s quite fast but let’s see if we can do anything better.</p> <p>If you check the documentation and the source code of the <code class="language-plaintext highlighter-rouge">Dataset</code> class you will end up to this class: <code class="language-plaintext highlighter-rouge">_MapDatasetFetcher</code>.</p> <p>```python #7 class _MapDatasetFetcher(_BaseDatasetFetcher): def fetch(self, possibly_batched_index): if self.auto_collation: if hasattr(self.dataset, “<strong>getitems</strong>”) and self.dataset.<strong>getitems</strong>: data = self.dataset.<strong>getitems</strong>(possibly_batched_index) else: data = [self.dataset[idx] for idx in possibly_batched_index] else: data = self.dataset[possibly_batched_index] return self.collate_fn(data)</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
+</span></pre></td> </tr></tbody></table></code></pre></div></div> <p>Now as you can see in order to iterate through our whole dataset which consists of 91 examples, we needed with batch size of 8 samples around 3 miliseconds. That’s quite fast but let’s see if we can do anything better.</p> <p>If you check the documentation and the source code of the <code class="language-plaintext highlighter-rouge">Dataset</code> class you will end up to this class: <code class="language-plaintext highlighter-rouge">_MapDatasetFetcher</code>.</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
 <td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
 5
-</pre></td> <td class="rouge-code"><pre>
-You can spot the devil in the details right? 
-
-```python
-data = [self.dataset[idx] for idx in possibly_batched_index]
+6
+7
+8
+9
+10
+</pre></td> <td class="rouge-code"><pre><span class="k">class</span> <span class="nc">_MapDatasetFetcher</span><span class="p">(</span><span class="n">_BaseDatasetFetcher</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">fetch</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">possibly_batched_index</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">self</span><span class="p">.</span><span class="n">auto_collation</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nf">hasattr</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">dataset</span><span class="p">,</span> <span class="sh">"</span><span class="s">__getitems__</span><span class="sh">"</span><span class="p">)</span> <span class="ow">and</span> <span class="n">self</span><span class="p">.</span><span class="n">dataset</span><span class="p">.</span><span class="n">__getitems__</span><span class="p">:</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">dataset</span><span class="p">.</span><span class="nf">__getitems__</span><span class="p">(</span><span class="n">possibly_batched_index</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">dataset</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">possibly_batched_index</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">dataset</span><span class="p">[</span><span class="n">possibly_batched_index</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">self</span><span class="p">.</span><span class="nf">collate_fn</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></td> </tr></tbody></table></code></pre></div></div> <p>You can spot the devil in the details right?</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
+<td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> <td class="rouge-code"><pre><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span><span class="p">.</span><span class="n">dataset</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">possibly_batched_index</span><span class="p">]</span>
 </pre></td> </tr></tbody></table></code></pre></div></div> <p>This line right here, means that our <code class="language-plaintext highlighter-rouge">Dataset</code> collects each window embedding seperately and then it concats them with the help of the <code class="language-plaintext highlighter-rouge">self.collate_fn</code> function. So this is all fine and good but can’t we collect all the indexes at once and make a single call to <code class="language-plaintext highlighter-rouge">__getitem__</code> ? After all the <code class="language-plaintext highlighter-rouge">nn.Embedding</code> supports all sorts of types of indexing and its optimized at its core to make such calls.</p> <p>This is where <code class="language-plaintext highlighter-rouge">__getitems__</code> comes in play. This little function which for some reason is not documented in Pytorch’s documentation is extremely helpful and serves exactly this purpose. Instead of making multiple calls to <code class="language-plaintext highlighter-rouge">__getitem__</code> and stack them in <code class="language-plaintext highlighter-rouge">collate_fn</code> we will make a single call to <code class="language-plaintext highlighter-rouge">__getitems__</code> after we have collected all indexes. And to implement it is very straightforward.</p> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr>
 <td class="rouge-gutter gl"><pre class="lineno">1
 2
