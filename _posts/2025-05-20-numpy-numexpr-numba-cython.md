@@ -46,7 +46,7 @@ The result?
 
 Surprisingly, it was actually slower than pure NumPy! (223 ms)
 
-Why? Because np.vectorize is really just a convenient wrapper for a Python loop—not a true speed booster. Lesson learned: Stick with NumPy’s built-in vectorized functions for performance.
+Why? Because `np.vectorize` is really just a convenient wrapper for a Python loop—not a true speed booster. Lesson learned: Stick with NumPy’s built-in vectorized functions for performance.
 
 ### 3. Supercharging with Numba
 
@@ -63,7 +63,7 @@ def numba_func(x: float):
     Returns:
     float: Exponential of the sine and cosine of the input value.
     """
-    result = math.exp(np.sin(x) + np.cos(x))  # Combine sine and cosine functions
+    result = np.exp(np.sin(x) + np.cos(x))  # Combine sine and cosine functions
     return result
 ```
 
@@ -118,6 +118,7 @@ Performance: About the same as Numba.
 But you do need to write some extra code and deal with compiling and its bit more cumbersome.
 
 > *Note*
+> 
 > We could further optimize the Cython version by doing more low level trics but we chose to not apply more effort for this experiment
 
 ### 5. The Surprise Winner: NumExpr
