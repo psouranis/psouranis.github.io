@@ -134,8 +134,7 @@ __isinstancecheck__()
 __subclasscheck__()
 ```
 
-`__isinstancecheck__` and `__subclasscheck__` are powerful metaclass methods that allow you to customize 
-how the built-in isinstance() and issubclass() functions behave for classes defined with that metaclass. They provide a way to inject custom logic for determining object and class relationships, going beyond the standard inheritance model.
+`__isinstancecheck__` and `__subclasscheck__` are powerful metaclass methods that allow you to customize how the built-in `isinstance()` and `issubclass()` functions behave for classes defined with that metaclass. They provide a way to inject custom logic for determining object and class relationships, going beyond the standard inheritance model.
 
 ## Use cases 
 
@@ -159,8 +158,7 @@ class Singleton(type)
     return cls._instance
 ```
 
-To make a metaclass we inherit from `type`. Important to remember: An `instance` method on a metaclass
-is a `classmethod` on a class. So this `__call__` method will be called when we create **and** instantiate a class that inherits from `Singleton` metaclass.
+To make a metaclass we inherit from `type`. Important to remember: An `instance` method on a metaclass is a `classmethod` on a class. So this `__call__` method will be called when we create **and** instantiate a class that inherits from `Singleton` metaclass.
 
 ```python
 class Once(metaclass=Singleton)
@@ -182,8 +180,7 @@ You could...
 2. Validate class methods.
 3. Prevent some class methods.
 
-In other words, this is as close as Python gets to compiler time errors. Let's say for example that we have
-a metaclass called `Unaddable`.
+In other words, this is as close as Python gets to compiler time errors. Let's say for example that we have a metaclass called `Unaddable`.
 
 ```python
 class Unaddable(type):
@@ -283,7 +280,6 @@ class AddressBook:
 
 AddressBook.store({"Bob Smith": "bob@example.com"})
 print(AddressBook.Bob_Smith)
-
 # AttributeError: type object 'AddressBook' has no attribute 'Bob_Smith'
 ```
 
@@ -320,7 +316,6 @@ AddressBook.store(
 )
 
 print(AddressBook.Bob_Smith) # "bob@example.com"
-
 ```
 
 ### One More Example - Abstract Base Class
@@ -353,11 +348,12 @@ class ABCMeta(type):
 
 The most crucial parts of this metaclass is the `__instancecheck__` and `__subclasscheck__`.
 
+## Ending notes
+
+Python metaclasses are a great tool for over-engineering your code and making it so abstract that even future you, 
+two weeks from now, will stare blankly and whisper, "What unholy sorcery is this?"
 
 ## References
 
 - [Metaclasses Demystified - Jason C. McDonald](https://www.youtube.com/watch?v=fEm0vi8SpkI)
 - [Understanding Python's Metaclasses](https://blog.ionelmc.ro/2015/02/09/understanding-python-metaclasses/)
-
-
-
