@@ -119,7 +119,7 @@ But you do need to write some extra code and deal with compiling and its bit mor
 
 > *Note*
 > 
-> We could further optimize the Cython version by doing more low level trics but we chose to not apply more effort for this experiment
+> We could further optimize the Cython version by doing more low level tricks but we chose to not apply more effort for this experiment
 
 ### 5. The Surprise Winner: NumExpr
 
