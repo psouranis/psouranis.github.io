@@ -73,7 +73,7 @@ What does a metaclass do? There are 4 things a metaclass manages in Python.
 </div>
 <br>
 
-1. The first is class instantiation.
+*The first is class instantiation.*
 
 
 ```python
@@ -90,7 +90,7 @@ Metaclass calls `__call__` which in turn calls `__new__` from `Class` (and if it
 <br>
 
 
-2. Class Attribute Storage.
+*Class Attribute Storage.*
 
 
 ```python
@@ -117,8 +117,7 @@ x['b'] = 2
 x['c'] = 3
 ```
 
-
-3. Method Resolution Order.
+*Method Resolution Order.*
 
 ```python
 mro()
@@ -126,8 +125,7 @@ mro()
 
 The `type` metaclass defines the `type.mro()` which sets the method resolution order for its instances. It is called at class instantiation, and its result is stored in `__mro__` (This attribute is a tuple of classes that are considered when looking for base classes during method resolution.).
 
-
-4. Inheritance.
+*Inheritance.*
 
 ```python
 __isinstancecheck__()
@@ -352,6 +350,8 @@ The most crucial parts of this metaclass is the `__instancecheck__` and `__subcl
 
 Python metaclasses are a great tool for over-engineering your code and making it so abstract that even future you, 
 two weeks from now, will stare blankly and whisper, "What unholy sorcery is this?"
+
+---
 
 ## References
 
