@@ -5,7 +5,7 @@ date: 2025-06-11 12:40:16
 description: Python metaclasses
 tags: Python Metaclasses
 categories: Python
-thumbnail: assets/post_images/numpy/numpy_go_brr.png
+thumbnail: assets/post_images/metaclasses/metaclass_head.png
 giscus_comments: true
 toc: 
   beginning: true
@@ -44,7 +44,7 @@ print(type(x))
 # <class 'numpy.ndarray'>
 ```
 
-You notice that the type is `class`!. So `type` is actually Python's built-in default metaclass. And the thing is that you can actually create a class dynamically using `type`
+So `type` is actually Python's built-in default metaclass. And the thing is that you can actually create a class dynamically using `type`.
 
 ```python
 type("Foo", (), {})
@@ -52,7 +52,6 @@ __main__.Foo
 ```
 
 > The `class` statement isn't just syntatictic sugar, it does some extra things, like setting a `__qualname__` and `__doc__` properties.
-
 
 The funny thing about `type` is that is of type `type` . 
 
