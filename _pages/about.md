@@ -29,3 +29,15 @@ Hi, I'm Panagiotis Souranis, a Data Scientist with over 5 years of experience. I
 Currently, I work as a Senior Data Scientist at Deutsche-Telekom in Thessaloniki. Previously I worked for Altair Engineering, Accenture and Deus Ex Machina.
 
 I enjoy teamwork and continuous learning, always looking to apply new ideas in data science to solve real-world problems.
+
+## About This Site
+
+The main purposes of this website are listed here:
+
+- Discuss the mathematics and the technical details of machine learning, deep learning, and computer science theories
+- Document the implementation of algorithms for solving real problems
+- Present any interesting idea
+- Record my personal achievements
+- Keep track of thousand interesting things that I will probably forget in 2 weeks
+
+
