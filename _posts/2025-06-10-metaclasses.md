@@ -69,7 +69,7 @@ What does a metaclass do? There are 4 things a metaclass manages in Python.
 
 <br>
 <div style="text-align: center;">
-  <img src="/assets/post_images/metaclasses/metaclass_do.png" style="width: 50%; height: auto;">
+  <img src="/assets/post_images/metaclasses/metaclass_do.png" style="width: 30%; height: auto;">
 </div>
 <br>
 
@@ -85,7 +85,7 @@ Metaclass calls `__call__` which in turn calls `__new__` from `Class` (and if it
 
 <br>
 <div style="text-align: center;">
-  <img src="/assets/post_images/metaclasses/instance_creation.png" style="width: 50%; height: auto;">
+  <img src="/assets/post_images/metaclasses/instance_creation.png" style="width: 30%; height: auto;">
 </div>
 <br>
 

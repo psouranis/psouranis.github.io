@@ -136,7 +136,7 @@ $$\text{factorial}(5) \rightarrow \text{factorialTail}(1, 120)$$
 Now, if we go back and compare the stacks corresponding to the recursive methods at their maximum depths, we will see that the space complexity of recursion was reduced from $$O(n)$$ to $$O(1)$$ thanks to tail-call elimination.
 
 <div style="text-align: center;">
-  <img src="/assets/post_images/tco_complexity.png" style="width: 50%;">
+  <img src="/assets/post_images/tco_complexity.png" style="width: 40%;">
 </div>
 
 ### Summary

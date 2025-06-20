@@ -17,7 +17,7 @@ In this article, we are going to focus in optimizing machine learning models aft
 
 <br>
 <div style="text-align: center;">
-  <img src="/assets/post_images/tree.webp" style="width: 50%; height: auto;">
+  <img src="/assets/post_images/tree.webp" style="width: 30%; height: auto;">
 </div>
 <br>
 
@@ -218,10 +218,10 @@ In the rest of the post, we will explore each of those techniques on the ImageNe
 Now that we've explored the different pruning methods, it's time to see how they perform in practice. We evaluated these techniques on the challenging ImageNet dataset, using the popular Vision Transformer architecture as our foundation. In our experiments, we adopted a strategy of applying the same pruning ratio to each layer throughout the pruning process, with the exception of the `LayerNorm` layers.
 
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr); gap: 10px; width: fit-content;">
-  <img src="/assets/post_images/imagenet1000/pruning_results_random_unstructured.png" alt="Image 1" style="width: 100%; height: auto;">
-  <img src="/assets/post_images/imagenet1000/pruning_results_random_structured.png" alt="Image 1" style="width: 100%; height: auto;">
-  <img src="/assets/post_images/imagenet1000/pruning_results_l1_unstructured.png" alt="Image 1" style="width: 100%; height: auto;">
-  <img src="/assets/post_images/imagenet1000/pruning_results_ln_structured.png" alt="Image 1" style="width: 100%; height: auto;">
+  <img src="/assets/post_images/imagenet1000/pruning_results_random_unstructured.png" alt="Image 1" style="width: 80%; height: auto;">
+  <img src="/assets/post_images/imagenet1000/pruning_results_random_structured.png" alt="Image 1" style="width: 80%; height: auto;">
+  <img src="/assets/post_images/imagenet1000/pruning_results_l1_unstructured.png" alt="Image 1" style="width: 80%; height: auto;">
+  <img src="/assets/post_images/imagenet1000/pruning_results_ln_structured.png" alt="Image 1" style="width: 80%; height: auto;">
 </div>
 
 The results indicate that the `l1_unstructured` pruning method yielded the most favorable trade-off between compression ratio and accuracy, which aligns with the expectation that removing weights with the lowest importance (as determined by the L1 norm) would be effective. As previously noted, the ln_structured method proved to be highly aggressive, leading to an immediate and significant drop in accuracy to an unacceptable level of approximately 20%. 
@@ -234,10 +234,10 @@ We can also analyze the impact of pruning and potential fine-tuning, we can visu
 
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, 1fr); gap: 10px; width: fit-content;">
   <img src="/assets/post_images/cls_histogram_base.png" style="width: 100%; height: auto;">
-  <img src="/assets/post_images/cls_histogram_l1_unstructured.png" style="width: 100%; height: auto;">
-  <img src="/assets/post_images/cls_histogram_ln_structured.png" style="width: 100%; height: auto;">
-  <img src="/assets/post_images/cls_histogram_random_structured.png" style="width: 100%; height: auto;">
-  <img src="/assets/post_images/cls_histogram_random_unstructured.png" style="width: 100%; height: auto;">
+  <img src="/assets/post_images/cls_histogram_l1_unstructured.png" style="width: 80%; height: auto;">
+  <img src="/assets/post_images/cls_histogram_ln_structured.png" style="width: 80%; height: auto;">
+  <img src="/assets/post_images/cls_histogram_random_structured.png" style="width: 80%; height: auto;">
+  <img src="/assets/post_images/cls_histogram_random_unstructured.png" style="width: 80%; height: auto;">
 </div>
 
 #### Sensitivity analysis for L1 structured (further examining structured pruning)
@@ -245,10 +245,10 @@ We can also analyze the impact of pruning and potential fine-tuning, we can visu
 Before we proceed to the last part of this post, which covers fine-tuning, we'll first conduct a sensitivity analysis with $$\ell_1$$​ structured pruning. The goal is to see if we can gain better accuracy by carefully choosing which layers to prune. We'll start by examining how the model performs when we try different pruning ratios for each layer.
 
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 1fr); gap: 10px; width: fit-content;">
-  <img src="/assets/post_images/l1_structured_cl_vs_projection.png" style="width: 100%; height: auto;">
-  <img src="/assets/post_images/l1_structured_l11_layer.png" style="width: 100%; height: auto;">
-  <img src="/assets/post_images/l1_structured_l0_layer.png" style="width: 100%; height: auto;">
-  <img src="/assets/post_images/l1_structured_l5_layer.png" style="width: 100%; height: auto;">
+  <img src="/assets/post_images/l1_structured_cl_vs_projection.png" style="width: 80%; height: auto;">
+  <img src="/assets/post_images/l1_structured_l11_layer.png" style="width: 80%; height: auto;">
+  <img src="/assets/post_images/l1_structured_l0_layer.png" style="width: 80%; height: auto;">
+  <img src="/assets/post_images/l1_structured_l5_layer.png" style="width: 80%; height: auto;">
 </div>
 
 It's interesting to observe that the effect of pruning varies significantly across different layers. Our results indicate that the embedding and classifier layers are the most important, which makes sense as they are the initial and final stages of the network. Heavily pruning these two layers can severely impact the network's performance. 
@@ -299,7 +299,7 @@ By doing this over and over, we can often make the model even smaller and still 
 <br>
 
 <div style="text-align: center;">
-  <img src="/assets/post_images/iterative_pruning.png" style="width: 60%;">
+  <img src="/assets/post_images/iterative_pruning.png" style="width: 40%;">
 </div>
 
 <br>
@@ -313,7 +313,7 @@ Now that we've covered the basics, let's dive into the results! The figure below
 <br>
 
 <div style="text-align: center;">
-  <img src="/assets/post_images/ln_structured_base_finetuned_iter.png" style="width: 100%;">
+  <img src="/assets/post_images/ln_structured_base_finetuned_iter.png" style="width: 80%;">
 </div>
 
 - For the Random unstructured, Random structured, and L1 structured methods, we only achieved sensible results using a 22% pruning ratio, and only when restricting pruning to the layers mentioned previously.
