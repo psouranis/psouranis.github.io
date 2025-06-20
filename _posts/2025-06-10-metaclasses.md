@@ -81,7 +81,7 @@ __call__()
 __new__()
 ```
 
-Metaclass calls `__call__` which in turn calls `__new__` from `Class` (and if it returned an instance of `Class` it will also call `Class.__init__`)
+Metaclass calls `__call__` which in turn calls `__new__` from `Class` (and if it returned an instance of `Class` it will also call `Class.__init__`).
 
 <br>
 <div style="text-align: center;">
