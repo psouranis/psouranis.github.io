@@ -38,12 +38,14 @@ a.btncv:hover {
  *****************************/
 
 p.location {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   white-space: nowrap;
+  color: black !important;
+  font-style: italic;
 }
 
 i.iconlocation {
-  color: var(--global-theme-color);
+  color: black !important;
   font-size: 0.8rem;
 }
 

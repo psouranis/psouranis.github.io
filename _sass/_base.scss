@@ -535,8 +535,10 @@ footer.sticky-bottom {
       border-color: var(--global-divider-color);
 
       .badge {
-        color: var(--global-card-bg-color) !important;
-        background-color: var(--global-theme-color) !important;
+        color: black !important;
+        background-color: white !important;
+        border: 2px solid #000;
+        border-radius: 7px;
       }
     }
   }

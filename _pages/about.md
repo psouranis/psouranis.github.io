@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <i class="fa-solid fa-location-dot" style="margin-left: 18px"></i> <i style="font-size: 15px; font-family: pt-serif">Thessaloniki, Greece</i>
+    <i class="fa-solid fa-location-dot" style="margin-left: 18px"></i> <i style="font-size: 15px; font-style: italic; font-family: Lora">Thessaloniki, Greece</i>
 
 
 latest_posts:

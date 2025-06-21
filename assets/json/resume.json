@@ -48,7 +48,7 @@
       "location": "Thessaloniki, Greece",
       "url": "https://www.csd.auth.gr",
       "area": "Artificial Intelligence",
-      "studyType": "MSc",
+      "studyType": "Masters",
       "startDate": "2018-08-01",
       "endDate": "2020-07-01",
       "score": "9.59",
@@ -59,18 +59,18 @@
       "location": "Thessaloniki, Greece",
       "url": "https://math.auth.gr/",
       "area": "Statistics",
-      "studyType": "MSc",
+      "studyType": "Masters",
       "startDate": "2018-08-01",
       "endDate": "2021-02-01",
       "score": "8.98",
-      "courses": ["Statistical Methods", "Forecasting", "Hidden Markov Models"]
+      "courses": ["Statistical Inference", "Forecasting", "Hidden Markov Models"]
     },
     {
       "institution": "Aristotle University of Thessaloniki, Thessaloniki, Greece",
       "location": "Thessaloniki, Greece",
       "url": "https://math.auth.gr/",
-      "area": "Statistics",
-      "studyType": "BSc",
+      "area": "Mathematics",
+      "studyType": "Diploma / 4 years equivalent",
       "startDate": "2013-08-01",
       "endDate": "2018-01-01",
       "score": "8.13",
@@ -83,7 +83,7 @@
       "date": "2023-09-01",
       "awarder": "Valory XYZ",
       "url": "https://www.valory.xyz/post/prediction-agent-hackathon-success",
-      "summary": "Hackathon to push forward the use of crypto AI agents in prediction markets."
+      "summary": "<a href=https://www.valory.xyz/post/prediction-agent-hackathon-success><u>Hackathon to push forward the use of crypto AI agents in prediction markets.</u></a> &nbsp; <a href=https://github.com/valory-xyz/mech/pull/115 style='color: black'><u>Github</u> <i class='fa-brands fa-github'></i></a>"
     },
     {
       "title": "Commendation",
@@ -99,28 +99,28 @@
       "date": "2024-10-11",
       "issuer": "DeepLearning.AI",
       "url": "https://coursera.org/share/4c44aeecab9d4c26dffb797da564d3ed",
-      "icon": "fa-solid fa-hashtag"
+      "icon": "fa-solid fa-up-right-from-square"
     },
     {
       "name": "Advanced Statistics for Data Science",
       "date": "2024-09-17",
       "issuer": "John Hopkins University",
       "url": "https://coursera.org/share/ac7a2a4a6d056d3b8e288f2b16681c37",
-      "icon": "fa-solid fa-hashtag"
+      "icon": "fa-solid fa-up-right-from-square"
     },
     {
       "name": "Applied DevOps Engineering",
       "date": "2023-09-08",
       "issuer": "IBM",
       "url": "https://coursera.org/share/21dbb810441eada83234ad4ab9329f98",
-      "icon": "fa-solid fa-hashtag"
+      "icon": "fa-solid fa-up-right-from-square"
     },
     {
       "name": "Machine Learning Engineering for Production (MLOps)",
       "date": "2022-01-01",
       "issuer": "DeepLearning.AI",
       "url": "https://coursera.org/share/ce2bf28a9f54d93ade3838a938b5379f",
-      "icon": "fa-solid fa-hashtag"
+      "icon": "fa-solid fa-up-right-from-square"
     }
   ],
   "publications": [
@@ -162,12 +162,12 @@
     {
       "language": "Greek",
       "fluency": "Native speaker",
-      "icon": ""
+      "icon": "fa-solid fa-language"
     },
     {
       "language": "English",
       "fluency": "Fluent",
-      "icon": ""
+      "icon": "fa-solid fa-language"
     }
   ],
   "interests": [
