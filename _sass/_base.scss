@@ -5,9 +5,16 @@
 // Typography
 
 
+/* On larger screens, make the container wider */
+@media (min-width: 768px) { /* Adjust breakpoint as needed */
+  .container {
+    max-width: 1200px; /* Make it wider on desktop */
+  }
+}
+
 .post {
-  margin-left: -15%;
-  margin-right: -15%;
+  /* Remove the negative margins, let it fill its parent */
+  width: 100%; /* Or just rely on block-level default behavior */
 }
 
 h1,
